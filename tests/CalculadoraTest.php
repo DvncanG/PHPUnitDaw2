@@ -4,11 +4,11 @@ require_once('./clases/Calculadora.php');
 
  
  final class CalculadoraTest extends TestCase{
+    
      public function testSuma(){
          $calc = new Calculadora();
          $result = $calc->suma(3,4);
-
-         $this->assertEquals(10, $result);
+         $this->assertEquals(7, $result);
      }
  }
  
