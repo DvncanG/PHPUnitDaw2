@@ -1,11 +1,14 @@
-<?php
+<?php declare(strict_types=1);
  use PHPUnit\Framework\TestCase;
- use Calculadora;
+require_once('./clases/Calculadora.php');
+
  
  final class CalculadoraTest extends TestCase{
      public function testSuma(){
          $calc = new Calculadora();
-         $this->assertEquals(8, $calc->suma(3,4));
+         $result = $calc->suma(3,4);
+
+         $this->assertEquals(10, $result);
      }
  }
  

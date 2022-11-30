@@ -1,0 +1,1 @@
+{"version":1,"defects":{"AnimalTest::testSonido":4,"CalculadoraTest::testSuma":3},"times":{"AnimalTest::testSonido":0.008,"CalculadoraTest::testSuma":0.004,"EmailTest::testCanBeCreatedFromValidEmailAddress":0.002,"EmailTest::testCannotBeCreatedFromInvalidEmailAddress":0.001,"EmailTest::testCanBeUsedAsString":0,"PrimerTest::testFirst":0.001}}
