@@ -10,14 +10,8 @@ final class CajeroTest extends TestCase {
 
     public function testRetirada() {
         $cajero = new Cajero();
-        $saldo = $cajero->retirada(2500, 3000);
-        $this->assertEquals("Saldo insuficiente", $saldo);
-    }
-
-    public function testIngreso() {
-        $cajero = new Cajero();
-        $saldo = $cajero->ingreso(2500, 3000);
-        $this->assertEquals(5500, $saldo);
+        $this->expectException(Exception::class);
+        $cajero->retirada(2500, 3000);
     }
 
 }

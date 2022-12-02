@@ -4,15 +4,10 @@ class Cajero {
 
     //put your code here
     public function retirada($saldo, $retiro) {
-        if ($saldo < $retiro) {
-            return "Saldo insuficiente";
-        } else {
-            return $saldo - $retiro;
+        if ($retiro > $saldo) {//Si la cantidad a retirar es menor que el saldo disponible
+            throw new Exception("Saldo insuficiente");
         }
-    }
-
-    public function ingreso($saldo, $ingreso) {
-        return $saldo + $ingreso;
+        return $saldo - $retiro;
     }
 
 }
